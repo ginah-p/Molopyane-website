@@ -1,0 +1,2074 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Molopyane Surgery | Quality Healthcare</title>
+
+<meta name="description" content="Molopyane Surgery (Inc.) provides general medical and surgical healthcare in Vosloorus, Gauteng. Contact us to request an appointment.">
+
+<style>
+/* =================================
+   1. GLOBAL STYLING
+================================= */
+
+:root {
+    --red: #d92332;
+    --red-dark: #ae1425;
+    --blue: #1267b2;
+    --blue-dark: #092c60;
+    --light-blue: #eaf4ff;
+    --white: #ffffff;
+    --text: #18304e;
+    --muted: #63758a;
+    --background: #f7faff;
+    --shadow: 0 12px 35px rgba(16, 54, 100, .10);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.65;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+.container {
+    width: min(1150px, 92%);
+    margin: auto;
+}
+
+.section {
+    padding: 85px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    color: var(--blue-dark);
+}
+
+.section-title h2 span {
+    color: var(--red);
+}
+
+.section-title p {
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-red {
+    background: var(--red);
+    color: white;
+}
+
+.btn-blue {
+    background: var(--blue);
+    color: white;
+}
+
+.btn-whatsapp {
+    background: #159b58;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background: #08783e;
+}
+
+/* =================================
+   2. HEADER / NAVIGATION
+================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.97);
+    box-shadow: 0 3px 20px rgba(0,0,0,.07);
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 67px;
+    height: 67px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+    background: white;
+}
+
+.logo-fallback {
+    width: 67px;
+    height: 67px;
+    border: 3px solid var(--blue);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--red);
+    font-size: 30px;
+}
+
+.brand-name strong {
+    display: block;
+    color: var(--red);
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+.brand-name small {
+    color: var(--blue-dark);
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.nav-links a {
+    font-weight: 600;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.nav-links a:hover {
+    color: var(--red);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--blue-dark);
+    cursor: pointer;
+}
+
+/* =================================
+   3. HERO SECTION
+================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg, #e9f4ff, #ffffff 65%, #dcecff);
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: rgba(18,103,178,.09);
+    top: -220px;
+    right: -100px;
+}
+
+.hero::after {
+    content: "+";
+    position: absolute;
+    right: 8%;
+    bottom: 10%;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(18,103,178,.10);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: .95fr 1.05fr;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-art {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    min-height: 470px;
+}
+
+.doctor-illustration {
+    width: 100%;
+    max-width: 430px;
+    animation: floatDoctor 4s ease-in-out infinite;
+    filter: drop-shadow(0 15px 15px rgba(15,50,90,.13));
+}
+
+@keyframes floatDoctor {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-13px); }
+}
+
+.hero-text .eyebrow {
+    color: var(--red);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.hero-text h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    color: var(--blue-dark);
+    line-height: 1.12;
+    margin: 16px 0;
+}
+
+.hero-text h1 span {
+    color: var(--red);
+}
+
+.hero-text > p {
+    color: var(--muted);
+    font-size: 18px;
+    max-width: 520px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.hero-trust {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    color: var(--blue-dark);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.trust-item span {
+    color: var(--red);
+    margin-right: 5px;
+}
+
+/* =================================
+   4. SERVICES
+================================= */
+
+.services {
+    background: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #e0eaf7;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: .35s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--blue);
+}
+
+.service-art {
+    background: linear-gradient(145deg, #e4f1ff, #f9fbff);
+    min-height: 210px;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
+
+.service-art svg {
+    width: 100%;
+    height: 190px;
+    max-width: 270px;
+}
+
+.service-info {
+    padding: 23px;
+}
+
+.service-info h3 {
+    color: var(--blue-dark);
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
+.service-info p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.service-icon {
+    color: var(--red);
+    font-size: 28px;
+}
+
+/* =================================
+   5. ABOUT SECTION
+================================= */
+
+.about {
+    background: var(--light-blue);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-art {
+    min-height: 320px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #1267b2, #092c60);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.about-art svg {
+    width: 85%;
+    max-width: 350px;
+}
+
+.about-text h2 {
+    color: var(--blue-dark);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-text h2 span {
+    color: var(--red);
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #52667c;
+}
+
+.experience {
+    display: inline-block;
+    padding: 12px 18px;
+    border-left: 5px solid var(--red);
+    background: white;
+    color: var(--blue-dark);
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+/* =================================
+   6. MISSION / VISION / VALUES
+================================= */
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.value-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--red);
+}
+
+.value-card h3 {
+    color: var(--blue-dark);
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: var(--muted);
+}
+
+.core-values {
+    margin-top: 45px;
+}
+
+.core-values h3 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--blue-dark);
+    margin-bottom: 25px;
+}
+
+.core-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.core-item {
+    padding: 20px 12px;
+    background: var(--light-blue);
+    border-radius: 14px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--blue-dark);
+}
+
+.core-item span {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+/* =================================
+   7. APPOINTMENTS
+================================= */
+
+.appointments {
+    background: linear-gradient(120deg, #092c60, #1267b2);
+    color: white;
+}
+
+.appointment-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.appointment-info h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.appointment-info p {
+    color: #dbeaff;
+    margin-bottom: 18px;
+}
+
+.appointment-form {
+    background: white;
+    color: var(--text);
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.2);
+}
+
+.appointment-form h3 {
+    color: var(--blue-dark);
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d7e1ed;
+    border-radius: 9px;
+    outline: none;
+    background: #fbfdff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(18,103,178,.10);
+}
+
+.consent {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    font-size: 12px;
+    color: var(--muted);
+    margin: 15px 0;
+}
+
+.consent input {
+    margin-top: 4px;
+}
+
+.appointment-form .btn {
+    width: 100%;
+}
+
+/* =================================
+   8. LOCATION
+================================= */
+
+.location {
+    background: white;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 30px;
+}
+
+.location-info {
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--light-blue);
+}
+
+.location-info h3 {
+    color: var(--blue-dark);
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.contact-line {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.contact-line .symbol {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    background: white;
+    border-radius: 12px;
+    color: var(--red);
+    font-size: 20px;
+}
+
+.contact-line strong {
+    display: block;
+    color: var(--blue-dark);
+}
+
+.contact-line p {
+    color: var(--muted);
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.map-frame {
+    border: 0;
+    width: 100%;
+    min-height: 350px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+/* =================================
+   9. FOOTER
+================================= */
+
+footer {
+    background: #071f47;
+    color: white;
+    padding: 55px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 35px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p, footer a {
+    color: #c8d8ec;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.2);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 13px;
+    color: #c8d8ec;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 900;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #159b58;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+    transition: .3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* =================================
+   10. ANIMATIONS
+================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 0 rgba(217,35,50,.25); }
+    50% { box-shadow: 0 0 0 12px rgba(217,35,50,0); }
+}
+
+/* =================================
+   11. RESPONSIVE DESIGN
+================================= */
+
+@media(max-width: 900px) {
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .core-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 700px) {
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 5%;
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 9px;
+    }
+
+    .nav-links .btn {
+        width: 100%;
+    }
+
+    .brand-name strong {
+        font-size: 15px;
+    }
+
+    .brand-logo, .logo-fallback {
+        width: 53px;
+        height: 53px;
+    }
+
+    .hero {
+        padding: 35px 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-art {
+        order: 1;
+        min-height: 300px;
+    }
+
+    .doctor-illustration {
+        max-width: 300px;
+    }
+
+    .hero-text {
+        order: 2;
+    }
+
+    .hero-text > p {
+        margin: auto;
+    }
+
+    .hero-buttons, .hero-trust {
+        justify-content: center;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid,
+    .appointment-grid,
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .core-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .appointment-form {
+        padding: 23px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =================================
+     SVG ILLUSTRATION LIBRARY
+     Original inline vector artwork
+================================= -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     style="position:absolute;width:0;height:0;overflow:hidden">
+
+<defs>
+
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f5bd91"/>
+        <stop offset="1" stop-color="#c9794f"/>
+    </linearGradient>
+
+    <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset="1" stop-color="#dceaff"/>
+    </linearGradient>
+
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2586dd"/>
+        <stop offset="1" stop-color="#07509c"/>
+    </linearGradient>
+
+</defs>
+
+<!-- FEMALE DOCTOR -->
+
+<symbol id="doctor" viewBox="0 0 400 500">
+
+    <!-- Hair behind head -->
+    <path d="M90 210 C50 110 100 35 200 35
+    C310 25 345 110 310 235
+    L320 345 L75 345Z"
+    fill="#301a21"/>
+
+    <!-- Face -->
+    <ellipse cx="200" cy="165" rx="91" ry="112"
+    fill="url(#skin)"/>
+
+    <!-- Ears -->
+    <ellipse cx="110" cy="180" rx="15" ry="25" fill="#c9794f"/>
+    <ellipse cx="290" cy="180" rx="15" ry="25" fill="#c9794f"/>
+
+    <!-- Curly hair -->
+    <g fill="#351c24">
+        <circle cx="115" cy="85" r="35"/>
+        <circle cx="150" cy="50" r="38"/>
+        <circle cx="193" cy="43" r="35"/>
+        <circle cx="235" cy="48" r="37"/>
+        <circle cx="275" cy="85" r="38"/>
+        <circle cx="95" cy="130" r="30"/>
+        <circle cx="305" cy="130" r="31"/>
+        <circle cx="112" cy="225" r="31"/>
+        <circle cx="290" cy="225" r="33"/>
+        <circle cx="90" cy="275" r="30"/>
+        <circle cx="305" cy="275" r="32"/>
+    </g>
+
+    <!-- Hair front -->
+    <path d="M105 125 Q110 45 200 55 Q285 38 295 125
+    Q260 95 235 111 Q195 72 170 120 Q140 91 105 145Z"
+    fill="#24151d"/>
+
+    <!-- Eyes -->
+    <ellipse cx="163" cy="170" rx="13" ry="18" fill="white"/>
+    <ellipse cx="235" cy="170" rx="13" ry="18" fill="white"/>
+    <circle cx="164" cy="171" r="8" fill="#482d26"/>
+    <circle cx="236" cy="171" r="8" fill="#482d26"/>
+    <circle cx="166" cy="169" r="3" fill="white"/>
+    <circle cx="238" cy="169" r="3" fill="white"/>
+
+    <!-- Glasses -->
+    <g fill="none" stroke="#30222a" stroke-width="6">
+        <rect x="129" y="149" width="65" height="45" rx="13"/>
+        <rect x="207" y="149" width="65" height="45" rx="13"/>
+        <path d="M194 166 L207 166 M129 165 L110 158 M272 165 L291 158"/>
+    </g>
+
+    <!-- Eyebrows -->
+    <path d="M145 142 Q165 129 184 142"
+    stroke="#44252a" stroke-width="6" fill="none"/>
+    <path d="M218 142 Q240 129 258 142"
+    stroke="#44252a" stroke-width="6" fill="none"/>
+
+    <!-- Nose -->
+    <path d="M199 174 L189 215 Q201 224 211 214"
+    stroke="#b86f50" stroke-width="4" fill="none"/>
+
+    <!-- Smile -->
+    <path d="M170 235 Q200 262 231 235
+    Q201 274 170 235Z" fill="#9b3942"/>
+
+    <!-- Neck -->
+    <rect x="171" y="255" width="58" height="55" rx="20"
+    fill="url(#skin)"/>
+
+    <!-- Body / scrubs -->
+    <path d="M90 315 Q200 280 310 315
+    L365 500 L35 500Z" fill="url(#blue)"/>
+
+    <!-- Coat -->
+    <path d="M105 307 L160 290 L200 365
+    L240 290 L295 307 L345 500
+    L55 500Z" fill="url(#coat)"/>
+
+    <!-- Coat lapels -->
+    <path d="M160 290 L200 365 L175 408
+    L142 310Z" fill="white" stroke="#c4d8ee" stroke-width="3"/>
+
+    <path d="M240 290 L200 365 L225 408
+    L258 310Z" fill="white" stroke="#c4d8ee" stroke-width="3"/>
+
+    <!-- Stethoscope -->
+    <path d="M153 316 Q130 375 165 407
+    Q200 438 235 407 Q269 375 247 316"
+    fill="none" stroke="#d92332" stroke-width="9"
+    stroke-linecap="round"/>
+
+    <path d="M165 407 L165 435"
+    stroke="#d92332" stroke-width="7"/>
+
+    <circle cx="165" cy="442" r="12"
+    fill="#d92332" stroke="#092c60" stroke-width="4"/>
+
+    <!-- Pockets -->
+    <path d="M95 410 L148 410 L148 460 L95 460Z"
+    fill="#f5faff" stroke="#c4d8ee" stroke-width="3"/>
+
+    <path d="M252 410 L305 410 L305 460 L252 460Z"
+    fill="#f5faff" stroke="#c4d8ee" stroke-width="3"/>
+
+</symbol>
+
+<!-- GENERAL CONSULTATION SCENE -->
+
+<symbol id="consultation" viewBox="0 0 300 200">
+
+    <rect x="10" y="10" width="280" height="180"
+    rx="22" fill="#e3f1ff"/>
+
+    <!-- Doctor -->
+    <circle cx="95" cy="62" r="28" fill="url(#skin)"/>
+    <path d="M65 62 Q68 15 103 28 Q130 30 124 69
+    Q108 45 88 49Z" fill="#301a21"/>
+
+    <path d="M55 105 Q95 80 140 105
+    L150 185 L45 185Z" fill="white"/>
+
+    <path d="M80 110 L100 145 L120 110"
+    fill="none" stroke="#1267b2" stroke-width="10"/>
+
+    <!-- Patient -->
+    <circle cx="220" cy="95" r="23" fill="#9d6248"/>
+    <path d="M193 91 Q194 56 225 64 Q250 68 248 95
+    Q220 78 193 91Z" fill="#24151d"/>
+
+    <path d="M185 128 Q220 105 255 128
+    L268 185 L175 185Z" fill="#d92332"/>
+
+    <!-- Medical chart -->
+    <rect x="116" y="105" width="40" height="53"
+    rx="5" fill="white" stroke="#1267b2" stroke-width="3"/>
+
+    <path d="M123 119 H149 M123 130 H149 M123 141 H143"
+    stroke="#1267b2" stroke-width="3"/>
+
+    <circle cx="135" cy="20" r="10" fill="#d92332"/>
+    <path d="M135 12 V28 M127 20 H143"
+    stroke="white" stroke-width="3"/>
+
+</symbol>
+
+<!-- SURGERY SCENE -->
+
+<symbol id="surgery" viewBox="0 0 300 200">
+
+    <rect x="10" y="10" width="280" height="180"
+    rx="22" fill="#dceeff"/>
+
+    <!-- Operating light -->
+    <path d="M100 15 L100 55 M200 15 L200 55"
+    stroke="#1267b2" stroke-width="5"/>
+
+    <circle cx="100" cy="62" r="31"
+    fill="white" stroke="#1267b2" stroke-width="4"/>
+
+    <circle cx="200" cy="62" r="31"
+    fill="white" stroke="#1267b2" stroke-width="4"/>
+
+    <g fill="#d92332">
+        <circle cx="100" cy="42" r="5"/>
+        <circle cx="80" cy="62" r="5"/>
+        <circle cx="120" cy="62" r="5"/>
+        <circle cx="100" cy="82" r="5"/>
+        <circle cx="200" cy="42" r="5"/>
+        <circle cx="180" cy="62" r="5"/>
+        <circle cx="220" cy="62" r="5"/>
+        <circle cx="200" cy="82" r="5"/>
+    </g>
+
+    <!-- Surgical team -->
+    <circle cx="90" cy="115" r="23" fill="#9c674f"/>
+    <path d="M65 109 Q67 78 94 84 Q112 85 115 110Z"
+    fill="#1267b2"/>
+
+    <circle cx="205" cy="115" r="23" fill="#a66c50"/>
+    <path d="M180 109 Q180 80 206 84 Q230 85 230 110Z"
+    fill="#1267b2"/>
+
+    <!-- Masks -->
+    <rect x="69" y="122" width="43" height="17" rx="6"
+    fill="#dff7ff"/>
+    <rect x="184" y="122" width="43" height="17" rx="6"
+    fill="#dff7ff"/>
+
+    <!-- Surgical table -->
+    <rect x="35" y="155" width="230" height="23"
+    rx="9" fill="#1267b2"/>
+    <rect x="55" y="175" width="12" height="15" fill="#092c60"/>
+    <rect x="233" y="175" width="12" height="15" fill="#092c60"/>
+
+</symbol>
+
+<!-- MATERNAL AND BABY CARE -->
+
+<symbol id="mother-baby" viewBox="0 0 300 200">
+
+    <rect x="10" y="10" width="280" height="180"
+    rx="22" fill="#fff0f1"/>
+
+    <!-- Mother hair -->
+    <circle cx="110" cy="65" r="38" fill="#301a21"/>
+
+    <!-- Mother's face -->
+    <circle cx="115" cy="78" r="27" fill="url(#skin)"/>
+
+    <!-- Mother hair details -->
+    <path d="M87 70 Q83 35 120 39 Q148 43 140 78
+    Q124 55 100 65Z" fill="#301a21"/>
+
+    <!-- Mother dress/body -->
+    <path d="M70 115 Q115 90 155 115
+    L185 190 L50 190Z" fill="#d92332"/>
+
+    <!-- Baby -->
+    <circle cx="187" cy="102" r="30" fill="#e7ad81"/>
+
+    <path d="M160 97 Q165 63 190 72
+    Q210 68 215 99 Q190 85 160 97Z"
+    fill="#492b24"/>
+
+    <path d="M158 132 Q188 112 217 132
+    L231 183 L145 183Z" fill="#ffffff"/>
+
+    <!-- Baby blanket -->
+    <path d="M145 150 Q185 125 225 151
+    L235 188 L145 188Z" fill="#1267b2"/>
+
+    <!-- Heart -->
+    <path d="M42 48 C22 22 0 52 42 85
+    C84 52 62 22 42 48Z" fill="#d92332"/>
+
+</symbol>
+
+</svg>
+
+
+<!-- =================================
+     HEADER
+================================= -->
+
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="brand">
+
+            <!-- Replace with your official logo -->
+            <img
+                src="images/molopyane-logo.png"
+                alt="Molopyane Surgery Logo"
+                class="brand-logo"
+                onerror="this.style.display='none';
+                document.getElementById('logoFallback').style.display='grid';"
+            >
+
+            <div class="logo-fallback" id="logoFallback"
+                 style="display:none">✚</div>
+
+            <div class="brand-name">
+                <strong>MOLOPYANE SURGERY</strong>
+                <small>Dr Molopyane & Stoffel</small>
+            </div>
+
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#values">Our Values</a>
+            <a href="#appointments">Appointments</a>
+            <a href="#contact">Contact</a>
+
+            <a href="https://wa.me/27633645261"
+               target="_blank"
+               rel="noopener"
+               class="btn btn-red">
+                Book via WhatsApp
+            </a>
+
+        </nav>
+    </div>
+</header>
+
+
+<!-- =================================
+     HERO SECTION
+================================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <div class="hero-art">
+
+            <!-- Animated doctor illustration -->
+            <svg class="doctor-illustration"
+                 viewBox="0 0 400 500"
+                 role="img"
+                 aria-label="Illustration of a friendly female doctor">
+
+                <use href="#doctor"></use>
+
+            </svg>
+
+        </div>
+
+        <div class="hero-text">
+
+            <p class="eyebrow">Our best, everyday.</p>
+
+            <h1>
+                Welcome to
+                <span>Molopyane Surgery (Inc.)</span>
+            </h1>
+
+            <p>
+                Quality general medical and surgical healthcare
+                delivered with compassion, professionalism and care.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#appointments" class="btn btn-red">
+                    Request an Appointment
+                </a>
+
+                <a href="#services" class="btn btn-blue">
+                    Explore Our Services
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+
+                <div class="trust-item">
+                    <span>♥</span> Compassionate Care
+                </div>
+
+                <div class="trust-item">
+                    <span>✚</span> Professional Service
+                </div>
+
+                <div class="trust-item">
+                    <span>✓</span> Patient-centred Care
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     SERVICES
+================================= -->
+
+<section class="section services" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our <span>Services</span></h2>
+            <p>
+                Comprehensive general medical and surgical care.
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- SERVICE 1 -->
+            <article class="service-card reveal">
+
+                <div class="service-art">
+
+                    <svg viewBox="0 0 300 200"
+                         role="img"
+                         aria-label="Doctor consulting with a patient">
+                        <use href="#consultation"></use>
+                    </svg>
+
+                </div>
+
+                <div class="service-info">
+                    <h3>General Medical Consultations</h3>
+                    <p>
+                        General consultations and primary healthcare
+                        focused on individual patient needs.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 2 -->
+            <article class="service-card reveal">
+
+                <div class="service-art">
+
+                    <svg viewBox="0 0 300 200"
+                         role="img"
+                         aria-label="Illustration of a surgical team">
+                        <use href="#surgery"></use>
+                    </svg>
+
+                </div>
+
+                <div class="service-info">
+                    <h3>General Surgical Procedures</h3>
+                    <p>
+                        General surgical care and specialised
+                        surgical interventions tailored to patients.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 3 -->
+            <article class="service-card reveal">
+
+                <div class="service-art">
+
+                    <svg viewBox="0 0 300 200"
+                         role="img"
+                         aria-label="Mother and baby illustration">
+                        <use href="#mother-baby"></use>
+                    </svg>
+
+                </div>
+
+                <div class="service-info">
+                    <h3>Antenatal Care</h3>
+                    <p>
+                        Antenatal healthcare and contraceptive
+                        advice as listed in the practice flyer.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 4 -->
+            <article class="service-card reveal">
+
+                <div class="service-art">
+                    <svg viewBox="0 0 300 200">
+                        <use href="#mother-baby"></use>
+                    </svg>
+                </div>
+
+                <div class="service-info">
+                    <h3>Well-Baby Care & Vaccination</h3>
+                    <p>
+                        Well-baby healthcare and vaccination
+                        services as listed in the practice flyer.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 5 -->
+            <article class="service-card reveal">
+
+                <div class="service-art">
+                    <svg viewBox="0 0 300 200">
+                        <rect x="55" y="25" width="190" height="150"
+                              rx="25" fill="#e0efff"/>
+                        <path d="M150 48 L210 70 V115
+                        Q205 155 150 168 Q95 155 90 115
+                        V70Z" fill="#1267b2"/>
+                        <path d="M135 106 L145 118 L171 87"
+                              fill="none" stroke="white"
+                              stroke-width="10"
+                              stroke-linecap="round"/>
+                        <circle cx="225" cy="45" r="20"
+                                fill="#d92332"/>
+                        <path d="M225 32 V58 M212 45 H238"
+                              stroke="white" stroke-width="5"/>
+                    </svg>
+                </div>
+
+                <div class="service-info">
+                    <h3>Preventative & Diagnostic Care</h3>
+                    <p>
+                        Preventative healthcare and diagnostic
+                        consultations.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 6 -->
+            <article class="service-card reveal">
+
+                <div class="service-art">
+                    <svg viewBox="0 0 300 200">
+                        <rect x="40" y="25" width="220" height="150"
+                              rx="25" fill="#e0efff"/>
+                        <path d="M150 45 C125 80 80 90 110 145
+                        Q150 178 190 145 Q220 90 150 45Z"
+                              fill="#d92332"/>
+                        <path d="M90 112 H120 L135 85
+                        L155 135 L173 103 H210"
+                              fill="none" stroke="white"
+                              stroke-width="7"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <circle cx="150" cy="110" r="64"
+                                fill="none" stroke="#1267b2"
+                                stroke-width="5"/>
+                    </svg>
+                </div>
+
+                <div class="service-info">
+                    <h3>Chronic Disease Management</h3>
+                    <p>
+                        Ongoing care and management for patients
+                        with chronic health conditions.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 7 -->
+            <article class="service-card reveal">
+
+                <div class="service-art">
+                    <svg viewBox="0 0 300 200">
+                        <rect x="40" y="35" width="220" height="130"
+                              rx="20" fill="#e0efff"/>
+                        <path d="M65 105 H235" stroke="#1267b2"
+                              stroke-width="12" stroke-linecap="round"/>
+                        <path d="M85 105 V145 M215 105 V145"
+                              stroke="#092c60" stroke-width="9"/>
+                        <circle cx="150" cy="73" r="25"
+                                fill="#dca17a"/>
+                        <path d="M110 105 Q150 78 190 105
+                        L180 130 H120Z" fill="#d92332"/>
+                        <path d="M120 130 L110 150 M180 130 L190 150"
+                              stroke="#1267b2" stroke-width="9"/>
+                    </svg>
+                </div>
+
+                <div class="service-info">
+                    <h3>Post-Operative Care & Rehabilitation</h3>
+                    <p>
+                        Follow-up care, recovery support and
+                        patient rehabilitation.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <!-- SERVICE 8 -->
+            <article class="service-card reveal">
+
+                <div class="service-art">
+                    <svg viewBox="0 0 300 200">
+                        <rect x="40" y="25" width="220" height="150"
+                              rx="22" fill="#e0efff"/>
+                        <circle cx="150" cy="100" r="58"
+                                fill="white" stroke="#1267b2"
+                                stroke-width="7"/>
+                        <path d="M150 65 V135 M115 100 H185"
+                              stroke="#d92332"
+                              stroke-width="12"
+                              stroke-linecap="round"/>
+                        <circle cx="220" cy="45" r="18"
+                                fill="#d92332"/>
+                        <path d="M220 35 V55 M210 45 H230"
+                              stroke="white" stroke-width="4"/>
+                    </svg>
+                </div>
+
+                <div class="service-info">
+                    <h3>Emergency & Trauma Care</h3>
+                    <p>
+                        Emergency and trauma-related medical care.
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     ABOUT
+================================= -->
+
+<section class="section about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-art">
+
+            <svg viewBox="0 0 400 400"
+                 role="img"
+                 aria-label="Medical cross and stethoscope illustration">
+
+                <circle cx="200" cy="200" r="140"
+                        fill="#ffffff" opacity=".12"/>
+
+                <circle cx="200" cy="200" r="105"
+                        fill="#ffffff" opacity=".15"/>
+
+                <path d="M175 100 H225 V175 H300
+                V225 H225 V300 H175 V225 H100
+                V175 H175Z"
+                fill="white"/>
+
+                <path d="M130 100 Q100 200 170 230
+                Q230 260 260 200"
+                stroke="#d92332"
+                stroke-width="12"
+                fill="none"
+                stroke-linecap="round"/>
+
+                <circle cx="260" cy="200" r="16"
+                        fill="#d92332" stroke="white"
+                        stroke-width="5"/>
+
+            </svg>
+
+        </div>
+
+        <div class="about-text">
+
+            <h2>About <span>Molopyane Surgery</span></h2>
+
+            <p>
+                Molopyane Surgery (Inc.) is a trusted and
+                well-established general practice and surgical
+                medical practice with over 20 years of dedicated
+                service to patients.
+            </p>
+
+            <p>
+                Built on clinical excellence, compassion and
+                integrity, the practice is committed to delivering
+                high-quality healthcare.
+            </p>
+
+            <p>
+                By combining general medical care with surgical
+                expertise, Molopyane Surgery prioritises patient
+                well-being at every stage of care — from consultation
+                to recovery.
+            </p>
+
+            <p>
+                Every patient is unique. Our commitment is to provide
+                compassionate, individualised care through every
+                stage of treatment.
+            </p>
+
+            <div class="experience">
+                Over 20 Years of Medical Experience
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     MISSION, VISION AND VALUES
+================================= -->
+
+<section class="section" id="values">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Our Mission & <span>Vision</span></h2>
+            <p>The principles that guide our practice.</p>
+        </div>
+
+        <div class="values-grid">
+
+            <article class="value-card reveal">
+                <h3>🎯 Our Mission</h3>
+
+                <p>
+                    To provide exceptional, life-saving medical
+                    and surgical care through skill, innovation,
+                    and compassion, ensuring every patient receives
+                    personalised treatment in a safe, supportive,
+                    and professional environment.
+                </p>
+            </article>
+
+            <article class="value-card reveal">
+                <h3>👁 Our Vision</h3>
+
+                <p>
+                    To be a leading general and surgical medical
+                    practice recognised for excellence, innovation,
+                    and a deep commitment to improving and saving
+                    lives within the community and beyond.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="core-values">
+
+            <h3>Our Core Values</h3>
+
+            <div class="core-grid">
+
+                <div class="core-item">
+                    <span>♥</span>
+                    Patient-Centred Care
+                </div>
+
+                <div class="core-item">
+                    <span>★</span>
+                    Excellence
+                </div>
+
+                <div class="core-item">
+                    <span>🤝</span>
+                    Compassion
+                </div>
+
+                <div class="core-item">
+                    <span>✓</span>
+                    Integrity
+                </div>
+
+                <div class="core-item">
+                    <span>✦</span>
+                    Innovation
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     APPOINTMENTS
+================================= -->
+
+<section class="section appointments" id="appointments">
+
+    <div class="container appointment-grid">
+
+        <div class="appointment-info">
+
+            <p class="eyebrow">Your health matters</p>
+
+            <h2>Request an Appointment</h2>
+
+            <p>
+                Need a consultation? Complete the appointment
+                request form and continue to WhatsApp.
+            </p>
+
+            <p>
+                Our practice will respond to your request
+                and confirm appointment availability.
+            </p>
+
+            <a href="tel:0118638908" class="btn btn-red">
+                Call 011 863 8908
+            </a>
+
+        </div>
+
+
+        <form class="appointment-form" id="appointmentForm">
+
+            <h3>Appointment Details</h3>
+
+            <div class="form-group">
+                <label for="patientName">Full Name *</label>
+                <input type="text"
+                       id="patientName"
+                       placeholder="Enter your name"
+                       required
+                       maxlength="100">
+            </div>
+
+            <div class="form-group">
+                <label for="patientPhone">Mobile Number *</label>
+                <input type="tel"
+                       id="patientPhone"
+                       placeholder="Enter your phone number"
+                       required
+                       maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select Service *</label>
+
+                <select id="service" required>
+                    <option value="">Choose a service</option>
+                    <option>General Medical Consultation</option>
+                    <option>General Surgical Procedures</option>
+                    <option>Emergency and Trauma Care</option>
+                    <option>Preventative and Diagnostic Care</option>
+                    <option>Chronic Disease Management</option>
+                    <option>Post-Operative Care</option>
+                    <option>Antenatal Care</option>
+                    <option>Contraceptive Advice</option>
+                    <option>Well-Baby Care and Vaccination</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="appointmentDate">Preferred Date *</label>
+                <input type="date"
+                       id="appointmentDate"
+                       required>
+            </div>
+
+            <label class="consent">
+                <input type="checkbox" id="consent" required>
+                <span>
+                    I consent to sharing the above appointment
+                    contact details with Molopyane Surgery through
+                    WhatsApp for the purpose of arranging an
+                    appointment. I understand this is a request
+                    and not a confirmed booking.
+                </span>
+            </label>
+
+            <button type="submit" class="btn btn-whatsapp">
+                Continue to WhatsApp →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     CONTACT AND GOOGLE MAPS
+================================= -->
+
+<section class="section location" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Visit <span>Our Practice</span></h2>
+            <p>We look forward to assisting you.</p>
+        </div>
+
+        <div class="location-grid">
+
+            <div class="location-info">
+
+                <h3>Contact Information</h3>
+
+                <div class="contact-line">
+                    <div class="symbol">☎</div>
+                    <div>
+                        <strong>Telephone</strong>
+                        <p>
+                            <a href="tel:0118638908">
+                                011 863 8908
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-line">
+                    <div class="symbol">◉</div>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <p>
+                            <a href="https://wa.me/27633645261"
+                               target="_blank"
+                               rel="noopener">
+                                063 364 5261
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-line">
+                    <div class="symbol">✉</div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>
+                            <a href="mailto:appointments@molopyanehealthcare.co.za">
+                                appointments@molopyanehealthcare.co.za
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-line">
+                    <div class="symbol">⌖</div>
+                    <div>
+                        <strong>Practice Address</strong>
+                        <p>
+                            4198 Zakhe Road,<br>
+                            Vosloorus Ext 2,<br>
+                            Vosloorus, 1475
+                        </p>
+                    </div>
+                </div>
+
+                <a class="btn btn-blue"
+                   target="_blank"
+                   rel="noopener"
+                   href="https://www.google.com/maps/search/?api=1&query=4198+Zakhe+Road+Vosloorus+Ext+2+Vosloorus+1475+South+Africa">
+                    Get Directions
+                </a>
+
+            </div>
+
+            <iframe
+                class="map-frame"
+                title="Molopyane Surgery location on Google Maps"
+                src="https://maps.google.com/maps?q=4198%20Zakhe%20Road%2C%20Vosloorus%20Ext%202%2C%20Vosloorus%2C%201475%2C%20South%20Africa&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>Molopyane Surgery (Inc.)</h3>
+
+                <p>
+                    Dr Molopyane & Stoffel
+                </p>
+
+                <p>
+                    Quality general medical and surgical care,
+                    delivered with compassion and integrity.
+                </p>
+
+                <p style="margin-top:15px;color:white;font-weight:bold">
+                    "Our best, everyday."
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#values">Our Values</a>
+                    <a href="#appointments">Appointments</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Get In Touch</h3>
+
+                <div class="footer-links">
+                    <a href="tel:0118638908">011 863 8908</a>
+                    <a href="https://wa.me/27633645261">
+                        WhatsApp: 063 364 5261
+                    </a>
+                    <a href="mailto:appointments@molopyanehealthcare.co.za">
+                        Appointments Email
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="year"></span>
+                Molopyane Surgery (Inc.). All Rights Reserved.
+            </p>
+
+            <p>
+                Healthcare with compassion.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a href="https://wa.me/27633645261"
+   target="_blank"
+   rel="noopener"
+   class="whatsapp-float"
+   aria-label="Contact Molopyane Surgery on WhatsApp">
+    ☎
+</a>
+
+
+<!-- =================================
+     JAVASCRIPT
+================================= -->
+
+<script>
+
+/* MOBILE NAVIGATION */
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function() {
+
+    navLinks.classList.toggle("active");
+
+    const isOpen = navLinks.classList.contains("active");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+    });
+
+});
+
+
+/* APPOINTMENT DATE VALIDATION */
+
+const dateInput = document.getElementById("appointmentDate");
+
+const today = new Date();
+const localDate = new Date(
+    today.getTime() - today.getTimezoneOffset() * 60000
+).toISOString().split("T")[0];
+
+dateInput.min = localDate;
+
+
+/* WHATSAPP APPOINTMENT FORM */
+
+const appointmentForm = document.getElementById("appointmentForm");
+
+appointmentForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("patientName").value.trim();
+    const phone = document.getElementById("patientPhone").value.trim();
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("appointmentDate").value;
+    const consent = document.getElementById("consent").checked;
+
+    if (!name || !phone || !service || !date || !consent) {
+        alert("Please complete all required fields.");
+        return;
+    }
+
+    const formattedDate = new Date(date + "T12:00:00")
+        .toLocaleDateString("en-ZA", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        });
+
+    const message =
+`Hello Molopyane Surgery,
+
+I would like to request an appointment.
+
+Name: ${name}
+Contact Number: ${phone}
+Service: ${service}
+Preferred Date: ${formattedDate}
+
+Please let me know whether this date is available.
+
+Thank you.`;
+
+    const whatsappNumber = "27633645261";
+
+    const whatsappURL =
+        "https://wa.me/" + whatsappNumber +
+        "?text=" + encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank", "noopener");
+
+});
+
+
+/* SCROLL ANIMATIONS */
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            observer.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+document.querySelectorAll(".reveal").forEach(element => {
+    observer.observe(element);
+});
+
+
+/* DYNAMIC COPYRIGHT YEAR */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
