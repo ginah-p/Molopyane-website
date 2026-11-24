@@ -9,7 +9,7 @@ A responsive static website built with HTML, CSS and JavaScript.
 - `images/` — crops from the supplied flyer: practice logo and illustrated clinician
 
 ## Before publishing
-1. The WhatsApp mobile number is configured as `27633645261` (+27 63 364 5261).
+1. The WhatsApp mobile number is configured as `27633645261` (+27 66 037 3426 ).
 2. The preferred domain is `molopyanehealthcare.co.za`; it still needs to be registered and connected.
 3. The intended appointments email is `appointments@molopyanehealthcare.co.za`; create the mailbox with the chosen email provider before publishing it as an active contact channel.
 4. Confirm the displayed practice name, services, address, contact number and whether the listed services are currently offered.
